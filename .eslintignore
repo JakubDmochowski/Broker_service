@@ -1,0 +1,4 @@
+**/*.js
+dist
+mock_systems
+node_modules
