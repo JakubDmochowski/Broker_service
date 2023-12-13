@@ -7,10 +7,6 @@ General idea on example with Booking:
 - Based on the information, pick to which system the booking should be passed
 - Pass the booking to the system
 
-                     >--Request-->|SystemA|
---Request-->|Broker|-> OR
-                     >--Request-->|SystemB|
-
 Requirements:
 Connection with database setup using DATABASE_URL in .env
 
