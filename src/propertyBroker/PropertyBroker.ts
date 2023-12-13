@@ -21,6 +21,7 @@ export class PropertyBroker implements IPropertyBroker {
   public async distribute(payload: PropertyPayload): DistributionResult {
     console.log(`Distributing payload: ${JSON.stringify(payload)}`)
     try{
+      // TODO: Make dependency injection for ORM
       const venue = await prisma.venue.findFirstOrThrow({
         where: {
           id: payload.data.venueId 
